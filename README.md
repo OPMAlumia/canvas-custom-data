@@ -6,10 +6,13 @@ Params
 
 * method=[GET/PUT]
   * Required for all requests 
+  
 * userId=[canvas_user_id]
   * Required for all requests
+  
 * userData={"data":{"my": "data", "some": "data }}
   * Required if method=PUT
+  
 keepDataAlive=[true / false]
   * Optional
 
