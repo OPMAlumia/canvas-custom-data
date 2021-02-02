@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
       .get(`/users/${id}/custom_data/?ns=${process.env.NS}`, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 11831~ZRIKdQl2hZ8lgkMyGog4ZyKlruZ3mqIHjpFj2EyfvV1s08BTHamExeLFTwze6GSf'
+          'Authorization': `${process.env.CANVAS_API_KEY}`
         }
       })
       .then(response => {
@@ -62,7 +62,7 @@ router.get('/', async (req, res) => {
       .put(`/users/${userId}/custom_data/?ns=${process.env.NS}`, payload, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 11831~ZRIKdQl2hZ8lgkMyGog4ZyKlruZ3mqIHjpFj2EyfvV1s08BTHamExeLFTwze6GSf'
+          'Authorization': `${process.env.CANVAS_API_KEY}`
         }
       })
       .then(response => {
@@ -88,7 +88,7 @@ router.get('/', async (req, res) => {
       .put(`/users/${userId}/custom_data/?ns=${process.env.NS}`, {data: oldUserDataObject}, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 11831~ZRIKdQl2hZ8lgkMyGog4ZyKlruZ3mqIHjpFj2EyfvV1s08BTHamExeLFTwze6GSf'
+          'Authorization': `${process.env.CANVAS_API_KEY}`
         }
       })
       .then(response => {
